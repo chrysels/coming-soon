@@ -43,16 +43,17 @@ video {
   height: 90vh;
 }
 
-/* @media (pointer: coarse) and (hover: none) {
+@media (pointer: coarse) and (hover: none) {
   body {
-    background: rgb(16, 76, 148) no-repeat center center scroll;
+    background: url(../img/bg-mobile.jpg)  rgb(16, 76, 148) no-repeat center center scroll;
     background-position: cover;
   }
   body video {
     display: none;
   }
-}
+} 
 
+/*
 @media (max-width: 768px) {
   body {
     background:  rgb(16, 76, 148) no-repeat center center scroll;
@@ -238,7 +239,8 @@ video {
 
 .btn-secondary {
   background-color: rgba(0, 46, 102, 0.8);
-  transition: 1s;
+  margin-right: 10px;
+  transition: 0.3s;
 }
 
 .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
