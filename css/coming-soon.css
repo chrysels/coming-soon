@@ -39,9 +39,13 @@ video {
   z-index: 0;
 }
 
-@media (pointer: coarse) and (hover: none) {
+.fillscreen{
+  height: 90vh;
+}
+
+/* @media (pointer: coarse) and (hover: none) {
   body {
-    background: url("../img/bg-mobile.jpg") rgb(16, 76, 148) no-repeat center center scroll;
+    background: rgb(16, 76, 148) no-repeat center center scroll;
     background-position: cover;
   }
   body video {
@@ -51,13 +55,13 @@ video {
 
 @media (max-width: 768px) {
   body {
-    background: url("../img/bg-mobile.jpg") rgb(16, 76, 148) no-repeat center center scroll;
+    background:  rgb(16, 76, 148) no-repeat center center scroll;
     background-position: cover;
   }
   body video {
     display: none;
   }
-}
+} */
 
 .overlay {
   position: absolute;
@@ -85,6 +89,7 @@ video {
   left: 0;
   width: 100%;
   min-height: 35rem;
+  background-color: rgba(218, 218, 218, 0.658);
   height: 100%;
   -webkit-transform: skewY(4deg);
   transform: skewY(4deg);
@@ -92,11 +97,13 @@ video {
   transform-origin: bottom right;
 }
 
-.masthead .masthead-content h1 {
-  font-size: 2.5rem;
+.masthead .masthead-content h3 {
+  color: #002E66;
+  font-size: 1.8rem;
 }
 
 .masthead .masthead-content p {
+  color: #002E66;
   font-size: 1.2rem;
 }
 
@@ -117,12 +124,19 @@ video {
   letter-spacing: 1px;
   padding: 1rem;
 }
+.logo{
+  margin-top: -150px;
+  
+}
 @media (max-width: 768px) {
   .overlay{
-    background-color: rgba(53, 53, 53, 0.719);
+    background-color: rgba(223, 41, 41, 0.719);
   }
   .logo{
-    height: 50px;
+    margin-top: 30px;
+    margin-top: -10px;
+    height: 100px;
+    padding-bottom: 50px;
     margin-left: auto;
     width: 100%;
     margin-right: auto;
@@ -181,10 +195,10 @@ video {
   color: white;
   background-color: rgba(0, 46, 102, 0.8);
   border-radius: 100%;
-  font-size: 2rem;
-  line-height: 4rem;
-  height: 4rem;
-  width: 4rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 @media (min-width: 768px) {
